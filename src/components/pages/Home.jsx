@@ -10,4 +10,14 @@ class Home extends Component {
         trio: [],
         jobNumber: []
     };
+
+    render() {
+        return(
+            <div>
+                
+            </div>
+        )
+    }
 }
+
+export default Home;
