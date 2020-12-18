@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { DeleteBtn, AddBtn } from '../buttons/ButtonList'; 
 
 class Home extends Component {
     state = {
@@ -14,7 +15,7 @@ class Home extends Component {
     render() {
         return(
             <div>
-                
+                <AddBtn />
             </div>
         )
     }
