@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // import "./style.css";
 
 // The ...props means, spread all of the passed props onto this element
