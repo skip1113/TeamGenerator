@@ -1,8 +1,7 @@
 import React from "react";
 // import "./style.css";
 
-// The ...props means, spread all of the passed props onto this element
-// That way we don't have to define them all individually
+// Add or Delete Team Member
 export function DeleteBtn(props) {
   return (
     <button className="delete-btn" {...props} onClick={props.onClick} data-id={props.id} tabIndex="0">
@@ -17,6 +16,31 @@ export function AddBtn(props) {
     <button className="add-btn" {...props} onClick={props.onClick} data-id={props.id}>
       {/* {props.children} */}
       +
+    </button>
+  );
+}
+
+//Add or delete teams/jobs
+export function AddFormBtn(props) {
+  return (
+    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-secondary">
+      {props.children}
+    </button>
+  );
+}
+
+export function DeleteFormBtn(props) {
+  return (
+    <button {...props} className="btn btn-secondary">
+      {props.children}
+    </button>
+  )
+}
+// Handle submit to generate teams and reset/clear fields
+export function GenerateBtn(props) {
+  return (
+    <button {...props} className="generate-btn">
+      {props.children}
     </button>
   );
 }

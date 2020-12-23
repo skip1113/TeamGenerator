@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export function Input(props) {
+export function InputTeam(props) {
     return (
       <div className="form-group">
         <input className="form-control" {...props} />
@@ -9,7 +9,7 @@ export function Input(props) {
     );
   }
   
-  export function TextArea(props) {
+  export function InputAssignment(props) {
     return (
       <div className="form-group">
         <textarea className="form-control" rows="4" {...props} />
@@ -17,32 +17,10 @@ export function Input(props) {
     );
   }
   
-  export function FormBtnRest(props) {
+  export function FormBtnReset(props) {
     return (
       <button {...props} onClick={props.handleSearchRestaurant} style={{ float: "center", marginBottom: 10 }} className="form-btn">
         {props.children}
       </button>
     );
-  }
-  export function FormBtn(props) {
-    return (
-      <button {...props} style={{ float: "center", marginBottom: 10 }} className="form-btn">
-        {props.children}
-      </button>
-    );
-  }
-
-  export function CreateBtn(props) {
-    return (
-      <button {...props} className="create-btn">
-        {props.children}
-      </button>
-    );
-  }
-  export function TrendingBtn(props) {
-    return (
-      <button {...props} onClick={props.onClick} className="trend-btn">
-        {props.children}
-      </button>
-    )
   }
