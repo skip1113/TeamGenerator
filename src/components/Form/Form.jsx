@@ -17,10 +17,3 @@ export function InputTeam(props) {
     );
   }
   
-  export function FormBtnReset(props) {
-    return (
-      <button {...props} onClick={props.handleSearchRestaurant} style={{ float: "center", marginBottom: 10 }} className="form-btn">
-        {props.children}
-      </button>
-    );
-  }
