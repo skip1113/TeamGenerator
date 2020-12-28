@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import { DeleteBtn, AddBtn } from '../buttons/ButtonList';
+import { DeleteBtn, AddBtn, AddFormBtn, DeleteFormBtn } from '../buttons/ButtonList';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -25,15 +25,18 @@ class Home extends Component {
                         <Col xs={6} className="assign-title">
                             Assignments
                             <InputAssignment />
+                            <AddFormBtn />
+                            <DeleteFormBtn />
                         </Col>
                         <Col xs={6} className="team-title">
                             Colleagues
                             <InputTeam />
+                            <AddBtn />
+                            <DeleteBtn />
                         </Col>
                     </Row>
                 </Container>
-                    <AddBtn />
-                    <DeleteBtn />
+                    
             </div>
         )
     }
