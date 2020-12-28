@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style.css';
 import { DeleteBtn, AddBtn } from '../buttons/ButtonList';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
@@ -20,8 +21,12 @@ class Home extends Component {
             <div>
                 <Container>
                     <Row>
-                        <Col xs={6}>1 of 2</Col>
-                        <Col xs={6}>2 of 2</Col>
+                        <Col xs={6} className="assign-title">
+                            Assignments
+                        </Col>
+                        <Col xs={6} className="team-title">
+                            Colleagues
+                        </Col>
                     </Row>
                 </Container>
                     <AddBtn />
